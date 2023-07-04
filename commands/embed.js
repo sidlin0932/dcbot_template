@@ -4,7 +4,8 @@ module.exports = {
     async execute(client, interaction) {
         const embed = new EmbedBuilder().setTitle("I'm an Embed")
                                         .setURL('https://www.youtube.com/watch?v=IbkEzIRR4pY')
-                                        .setDescription('test');
+                                        .setDescription('test')
+                                        .setAuthor({ name: 'hi', iconURL: '放URL', url: '放URL' });
         interaction.reply({ embeds: [embed] });
     },
 };
